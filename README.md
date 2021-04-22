@@ -20,7 +20,7 @@ and make sense of the human languages in a manner that is valuable.
 ## DATASET 
 The dataset is a collection of about 20800 news articles. This dataset has been
 compiled and created by the University of Tennessee’s Machine Learning Club, USA.
-This dataset is freely available here : https://www.kaggle.com/c/fake-news/data.
+This dataset is freely available here : https://www.kaggle.com/c/fake-news/data .
 The dataset consists of the following attributes:
 
 - **id**: unique id for a news article
@@ -67,7 +67,7 @@ removal of stop words can impact the performance of models.
 All these models were applied and compared to decide upon the more suitable Machine Learning algorithms to apply for Fake news detection and also find the models that may not be very well suited for fake news detection. 
 
 ## Results 
-Please view the [Project Report](Fake%20News%20Detection%20Report.pdf) to find all results and comparative graphs between all models and across the 2 approaches using which we draw concrete conclusions. 
+Please view the [Project Report](Report.pdf) to find all results and comparative graphs between all models and across the 2 approaches using which we draw concrete conclusions. You may also view a compact presentation of this project in the [Presentation Slides](Presentation%20Slides.pdf).
 
 ## Conclusion
 Classifying news manually requires in-depth knowledge of the domain and
@@ -111,6 +111,13 @@ classification.
 high false negative values of 805 and 853. Hence Multinomial Naive
 Bayes is not an apt model for fake news classification.
 
+## Running Instructions 
+1. Clone this repository.
+2. Download train.csv and test.csv from kaggle (https://www.kaggle.com/c/fake-news/data).
+3. Create a folder called "fake-news" in the same directory as the ipynb files. 
+4. Include train.csv and test.csv in the fake-news folder.
+5. Run the ipynb files using jupyter notebook. 
+ 
 ## Submitted by
 - [Aditya Chirania](https://github.com/adityachirania)
 
