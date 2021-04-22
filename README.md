@@ -1,4 +1,4 @@
-# Fake_News_Detection
+# Fake News Detection
 ## INTRODUCTION
 
 Fake news can cause considerable misunderstandings in society, and the
@@ -17,17 +17,17 @@ intelligence that deals with the interaction between computers and humans using
 the natural language. The ultimate objective of NLP is to read, decipher, understand,
 and make sense of the human languages in a manner that is valuable.
 
-## Dataset 
+## DATASET 
 The dataset is a collection of about 20800 news articles. This dataset has been
 compiled and created by the University of Tennessee’s Machine Learning Club, USA.
 This dataset is freely available here : https://www.kaggle.com/c/fake-news/data.
 The dataset consists of the following attributes:
 
-- id: unique id for a news article
-- title: the title of a news article
-- author: author of the news article
-- text: the text of the article; could be incomplete
-- label: a label that marks the article as potentially unreliable
+- **id**: unique id for a news article
+- **title**: the title of a news article
+- **author**: author of the news article
+- **text**: the text of the article; could be incomplete
+- **label**: a label that marks the article as potentially unreliable
   - 1: False News or Unreliable
   - 0: True News or reliable
  
@@ -35,11 +35,12 @@ The dataset consists of the following attributes:
 
 We have applied models with 2 approaches to data cleaning:
 
-• Approach 1: In the first approach, we have selected only one feature i.e. the
+• **Approach 1**: In the first approach, we have selected only one feature i.e. the
 attribute-news text and have directly applied the Feature Extraction tools like
 TF-IDF vectorization after eliminating rows with null values from the text.
 
-• Approach 2: In the second approach, we have followed the steps of
+• **Approach 2**: In the second approach, we have followed the steps of
+
   - Combining all attributes including “author”, “text” and “title” into one column.
   - Replacing null values with spaces(missing data imputation).
   - Removing stop-words and special characters.
@@ -51,17 +52,17 @@ good NLP techniques are and how cleaning techniques like lemmatization and
 removal of stop words can impact the performance of models.
 
 ## Models applied 
-- PASSIVE AGGRESSIVE CLASSIFIER 
-- MULTI LAYER PERCEPTRON
-- LOGISTIC REGRESSION
-- MULTINOMIAL NAÏVE BAYES
-- DECISION TREE
-- GRADIENT BOOSTING CLASSIFIER
-- RANDOM FOREST CLASSIFIER
-- K-NEAREST NEIGHBOURS
-- SUPPORT VECTOR MACHINE-LINEAR KERNEL
-- ADA BOOST
-- XG BOOST
+1. Passive Aggressive Classifier 
+2. Multi Layer Perceptron
+3. Logistic Regression
+4. Multinomial Naïve Bayes
+5. Decision Tree
+6. Gradient Boosting Classifier
+7. Random Forest Classifier
+8. K-Nearest Neighbours
+9. Support Vector Machine-Linear Kernel
+10. Ada Boost
+11. XG Boost
 
 All these models were applied and compared to decide upon the more suitable Machine Learning algorithms to apply for Fake news detection and also find the models that may not be very well suited for fake news detection. 
 
@@ -80,8 +81,8 @@ input to the models. The learning models were trained. Some models have
 achieved comparatively higher accuracy than others. We used multiple
 performance metrics to compare the results for each algorithm. A Fake News
 Classifier should essentially ensure at least the following measure:
-  1. High accuracy
-  2. The number of False Negatives must be minimum. The value of False Negative indicates how many actually Fake News has been classified/predicted as Real news by the Machine Learning model. Clearly, this situation is not desirable because the results of fake news classified as true news may be catastrophic.
+  1. High **accuracy**
+  2. The number of **False Negatives** must be **minimum**. The value of False Negative indicates how many actually Fake News has been classified/predicted as Real news by the Machine Learning model. Clearly, this situation is not desirable because the results of fake news classified as true news may be catastrophic.
 
 We have made some concrete conclusions at the end of our experiments:
 
@@ -109,3 +110,8 @@ classification.
 83% in the first and second approach respectively, have significantly
 high false negative values of 805 and 853. Hence Multinomial Naive
 Bayes is not an apt model for fake news classification.
+
+## Submitted by
+- [Aditya Chirania](https://github.com/adityachirania)
+
+- [Anusha P. Das](https://github.com/Anusha1790)
